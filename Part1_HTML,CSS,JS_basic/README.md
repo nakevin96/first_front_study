@@ -32,7 +32,7 @@ HTML은 **Hypertext Markup Language**의 약자로
 `<body>`가 바로 사용자에게 보여지는 최상위 컨테이너로, 이 안에 작성하는 코드들이 유저들에게 보여진다.
 </br>
 </br></br></br>
-<span style="color:black;background-color: #F2FE8A; font-size:180%"> **👁‍🗨TAG</TAG>란?**</span>  
+<span style="color:black;background-color: #F2FE8A; font-size:180%"> **👁‍🗨TAG란?**</span>  
   
   이사를 할 때 어느 물건이 어느 방의 물건인지, 그리고 방 안의 물건에서도 어느 위치에 있던 물건인지에 따라 나누어 담은 후 이사를 한다.  
   위와 같이 이사를 하면 짐을 푼 후 제자리에 정리하기도 편해진다.  
@@ -54,4 +54,37 @@ Inline 레벨일 때는 충분한 공간이 있을 때 연달아 나오는 아�
 <img src="https://i.stack.imgur.com/UCxMx.png" width="450">  
 태그라는 것은 <>로 시작하고 </>로 끝나며  
 태그 안에 존재하는 내용을 element, 태그를 포함한 전체를 Element, 혹은 node라고 부른다.  
+tag의 종류에 대한 코드는 tag_prac.html을 보도록 하자.  
+</br></br></br>
+<span style="color:black;background-color: #F2FE8A; font-size:180%"> **👁‍🗨CSS란?**</span>  
+  
+CSS는 **Cascading Style Sheet**의 약자로 HTML을 꾸며주는 역할을 한다.  
+스타일을 정리한 문서인데 여기서 'Cascading'이란 '폭포처럼 쏟아지는 물'과 같이 위에서 아래로 떨어지는 형태를 의미한다.  
+스타일링을 작성한 문서, 브라우저에서 기본적으로 제공하는 UI 스타일링 등 다양한 스타일링 정의가 있을 때,  
+특정 요소에대한 스타일의 세부적인 정의가 있다면 사용하고, 없다면 다음 스타일링을 확인하며 특정 요소의 스타일을 지정한다.  
 </br>
+웹사이트를 스타일링 할 때, 간단하게만 스타일의 종류를 나누어본다면 **개발자가 작성하는 style sheet**(css파일- Author style), 브라우저 상에서 다크모드와 같이 **사용자의 취향에 맞게 변경되는 스타일**(User style), **브라우저에 기본적으로 지정되어 있는 스타일** (Browser style)로 나눌 수 있다.  
+여기서의 Cascading을 한 번 생각해보면,  
+만약 브라우저가 버튼을 화면에 구현하려고 하는데, Author style이 있다면 해당 스타일을 사용하고 없다면 User Style을 확인하여 정의한다. 만약 사용자가 지정한 스타일링도 존재하지 않는다면 그 때 브라우저의 기본 스타일을 이용해 버튼을 구현한다.  
+이렇게 Author style -> User style -> Browser style로 확인을 진행하는 과정을 **Cascading**이라 하는 것이다.  
+</br>
+Cascading의 연결고리를 끊어내는 `!important`라는 문법이 있기는 한데, 이는 별로 좋지 못한 방법이니, html의 구조를 수정하던가 css의 구조를 수정하는 것이 좋다. 
+</br></br></br>
+<span style="color:black;background-color: #F2FE8A; font-size:180%"> **👁‍🗨CSS의 Selector는 무엇일까?**</span>  
+</br>
+<img src="https://velog.velcdn.com/images%2Frameau17%2Fpost%2F9fa8ba78-b8e7-41d4-9f96-157c5b8309a1%2F2z4a3yh4.jpeg" width="450"> 
+  
+Selector(선택자)라는 것은 HTML의 어떤 태그들을 고를 것인지 규정하는 문법이다.  
+`*`은 모든 태그  
+`tag name`은 특정 이름을 갖는 태그  
+`#id`는 해당하는 id를 갖는 태그  
+`.class`는 해당하는 클래스를 갖는 태그  
+`:`는 State를 달 수 있는 문법  
+`[]`는 속성값 attribute만 골라서 적용하는 문법을 말한다.  
+```css
+selector {
+  property: value;
+}
+```  
+위와 같이 selector로 적용하고자 하는 태그부분을 지정하고 property와 value를 이용해 스타일을 꾸미게 된다.  
+자세한 적용은 `css_prac.html`을 보자.  
