@@ -88,3 +88,51 @@ selector {
 ```  
 위와 같이 selector로 적용하고자 하는 태그부분을 지정하고 property와 value를 이용해 스타일을 꾸미게 된다.  
 자세한 적용은 `css_prac.html`을 보자.  
+</br></br></br>
+<span style="color:black;background-color: #F2FE8A; font-size:180%"> **👁‍🗨Display**</span>  
+  
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Display and Position</title>
+  </head>
+  <body>
+    <!-- Block level-->
+    <!--block level은 태그 하나가 한 줄을 차지한다.-->
+    <!--div는 내용이 없어도 css가 적용된다.-->
+    <div></div>
+    <div></div>
+
+
+    <!-- Inline level-->
+    <!--inline level은 공간이 많으면 여러개가 나올 수 있다-->
+    <!--span은 inline level이라 내용이 없으면 css가 적용되지 않는다-->
+    <span></span>
+    <span></span>
+
+
+  </body>
+</html>
+```
+```css
+div, span{
+  width: 5rem;
+  height: 5rem;
+  margin: 1.25rem;
+  background: pink;
+}
+
+div {
+  background: red;
+}
+
+span{
+  background: blue;
+  /*display속성을 이용하여 inline 레벨에서 block 레벨로 변경할 수 있다.
+  속성중에  inline-block이라는 속성을 사용하면 한 줄에 넣는데 inline처럼 content만 꾸미는 것이 아니라 지정한 높이와 넓이 에 맞는 block만큼 css를 적용한다.*/
+  display:block;
+}
+```
