@@ -135,4 +135,42 @@ span{
   속성중에  inline-block이라는 속성을 사용하면 한 줄에 넣는데 inline처럼 content만 꾸미는 것이 아니라 지정한 높이와 넓이 에 맞는 block만큼 css를 적용한다.*/
   display:block;
 }
-```
+```  
+</br></br></br>
+<span style="color:black;background-color: #F2FE8A; font-size:180%"> **👁‍🗨FLEX BOX?**</span>  
+  
+FLEX BOX는 BOX와 ITEM을 행, 열에 자유롭게 배치할 수 있는 BOX를 말한다.  
+BOX가 커지면 item이 어떤 방식으로 공간을 차지할 것인지, BOX가 줄어들면 item의 배치는 어떻게 할 것인지 유연하게 정의할 수 있다.
+</br></br>
+Flex BOX를 알아보기 전에 float이라는 것을 간단하게 보면 아래와 같이  
+<img src="https://lh4.googleusercontent.com/-P-MsEKlMZi4/UkLJQdWErkI/AAAAAAAAAYA/F93J7DKS0UQ/s642/CU01034D_1.png" width="450">   
+`float`의 목적은 이미지와 텍스트를 어떻게 배치할 것인지 정의하는 것이다.  
+FLEX BOX가 없었을 때는 원래의 목적보다는 `float`을 BOX의 배치를 수정하기 위해 사용했다.  
+</br>
+FLEX BOX는 Box(Container)에 적용할 수 있는 속성 값들과,  
+Item들에 적용할 수 있는 속성값들이 존재한다.  
+Box에 적용할 수 있는 속성 값들은  
+```css
+[display]
+[flex-direction]
+[flex-wrap]
+[flex-flow]
+[justify-content]
+[align-items]
+[align-content]
+```  
+등이 존재한다.  
+Item에 적용이 가능한 특성으로는  
+```css
+[order]
+[flex-grow]
+[flex-shrink]
+[flex]
+[align-self]
+```  
+등이 존재한다.  
+</br>  
+<img src="https://samanthaming.gumlet.io/flexbox30/4-flexbox-axes.jpg.gz?format=auto" width="450">   
+또다른 중요한 개념으로 `main axis(중심 축)`와 `cross axis(반대 축)`가 있다.  
+수직과 수평선이 있을 때 이 중 하나가 중심 축, 나머지가 반대 축이 된다.  
+item이 수평방향으로 정렬된다면 수평 축이 main axis, 수직 축이 cross axis가 되는 것이다.  

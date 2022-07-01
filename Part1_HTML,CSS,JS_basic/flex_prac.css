@@ -1,0 +1,61 @@
+.container {
+    background: beige;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* flex-flow를 합해서 flex-flow: row-reverse wrap;으로 표기할 수 있다*/
+
+    justify-content: space-between; /*main axis 기준*/
+    align-items: flex-end; /*cross axis 기준*/
+    align-content: flex-end;
+}
+
+.item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.item1{
+    background: #ef9a9a;
+}
+
+.item2{
+    background: #f48fb1;
+}
+
+.item3{
+    background: #ce93d8;
+    flex-shrink: 0;
+}
+
+.item4{
+    background: #b39ddb;
+    flex-grow: 0.5;
+}
+
+.item5{
+    background: #90caf9;
+}
+
+.item6{
+    background: #a5d6a7;
+}
+
+.item7{
+    background: #e6ee9c;
+}
+
+.item8{
+    background: #dceb56;
+}
+
+.item9{
+    background: #ecce6b;
+}
+
+.item10{
+    background: #eebd9c;
+    order:-1;
+}
